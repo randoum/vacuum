@@ -9,6 +9,8 @@ module Vacuum
              BrowseNodeInfo.BrowseNodes.Ancestor
              BrowseNodeInfo.BrowseNodes.SalesRank
              BrowseNodeInfo.WebsiteSalesRank
+             CustomerReviews.Count
+             CustomerReviews.StarRating
              Images.Primary.Small
              Images.Primary.Medium
              Images.Primary.Large
@@ -16,9 +18,9 @@ module Vacuum
              Images.Variants.Medium
              Images.Variants.Large
              ItemInfo.ByLineInfo
-             ItemInfo.Classifications
              ItemInfo.ContentInfo
              ItemInfo.ContentRating
+             ItemInfo.Classifications
              ItemInfo.ExternalIds
              ItemInfo.Features
              ItemInfo.ManufactureInfo
@@ -31,10 +33,12 @@ module Vacuum
              Offers.Listings.Availability.MinOrderQuantity
              Offers.Listings.Availability.Type
              Offers.Listings.Condition
+             Offers.Listings.Condition.ConditionNote
              Offers.Listings.Condition.SubCondition
              Offers.Listings.DeliveryInfo.IsAmazonFulfilled
              Offers.Listings.DeliveryInfo.IsFreeShippingEligible
              Offers.Listings.DeliveryInfo.IsPrimeEligible
+             Offers.Listings.DeliveryInfo.ShippingCharges
              Offers.Listings.IsBuyBoxWinner
              Offers.Listings.LoyaltyPoints.Points
              Offers.Listings.MerchantInfo
@@ -46,7 +50,23 @@ module Vacuum
              Offers.Summaries.HighestPrice
              Offers.Summaries.LowestPrice
              Offers.Summaries.OfferCount
-             ParentASIN].freeze
+             ParentASIN
+             RentalOffers.Listings.Availability.MaxOrderQuantity
+             RentalOffers.Listings.Availability.Message
+             RentalOffers.Listings.Availability.MinOrderQuantity
+             RentalOffers.Listings.Availability.Type
+             RentalOffers.Listings.BasePrice
+             RentalOffers.Listings.Condition
+             RentalOffers.Listings.Condition.ConditionNote
+             RentalOffers.Listings.Condition.SubCondition
+             RentalOffers.Listings.DeliveryInfo.IsAmazonFulfilled
+             RentalOffers.Listings.DeliveryInfo.IsFreeShippingEligible
+             RentalOffers.Listings.DeliveryInfo.IsPrimeEligible
+             RentalOffers.Listings.DeliveryInfo.ShippingCharges
+             RentalOffers.Listings.MerchantInfo
+             VariationSummary.Price.HighestPrice
+             VariationSummary.Price.LowestPrice
+             VariationSummary.VariationDimension].freeze
     private_constant :ALL
 
     # @!attribute [r] all
